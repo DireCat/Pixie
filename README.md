@@ -18,5 +18,5 @@ The library is working however some functional is not implemented yet:
 - Some drawing functions
 - More documentation and examples
 <br/>
-There is no "master" yet because of the need to create an interface for this library in order to get this working on various type of displays rather than NeoPixel. This can result in structural changes which may result in breaking the code using this library in the future.
+There is no "master" yet because of the need to create an interface for this library in order to get this working on various type of displays rather than NeoPixel. These structural changes which may result in breaking the code using this library in the future.
 
