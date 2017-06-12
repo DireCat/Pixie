@@ -1,0 +1,39 @@
+
+# Class
+
+Pixie				KEYWORD1
+Pixie2D				KEYWORD1
+PixieLayer			KEYWORD1
+PixieLayer2D		KEYWORD1
+
+
+# Methods and Functions 
+
+setPixel				KEYWORD2
+setMappingFunction		KEYWORD2
+remap					KEYWORD2
+setOverflowEvent		KEYWORD2
+addLayer				KEYWORD2
+removeLayer				KEYWORD2
+show					KEYWORD2
+getLedCount				KEYWORD2
+getWidth				KEYWORD2
+getHeight				KEYWORD2
+
+
+# Constants
+
+# Pixie
+
+p_int			LITERAL1
+
+# Pixie2D Orientation
+
+LS_HORIZONTAL	LITERAL1
+LS_VERTICAL		LITERAL1
+LS_LEFT			LITERAL1
+LS_RIGHT		LITERAL1
+LS_TOP			LITERAL1
+LS_BOTTOM		LITERAL1
+LS_ZIGZAG		LITERAL1
+LS_LINEAR		LITERAL1
