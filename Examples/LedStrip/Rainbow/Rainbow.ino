@@ -1,19 +1,24 @@
+/* BASIC RAINBOW EXAMPLE FOR PIXIE LIBRARY */
+
 #include <Pixie.h>
 
-/* pin: 8, led count: 50 */
-Pixie p (8, 50); 
+#define LS_PIN 4				// arduino pin attached to the strip
+#define LED_COUNT 50		// number of leds in the strip
+
+#define WAVES_COUNT 2		// rainbow waves count
+
+/* create Pixie object referenced as "p" */
+Pixie p (LS_PIN, LED_COUNT); 
 
 void setup ()
 {
-	
+		/* draw a rainbow */
+	  p.rainbow (0, LED_COUNT, WAVES_COUNT);
 }
 
 void loop ()
 {
-	static float t = 0;
-	
-  p.clear();
-  p.rainbow (0, 12 * ((sin(t+=PI/8.0)+1)/2));   
-  p.show();
-  delay(50);
+		p.shiftUp();	// move up pixels by cyclic shifting 
+		p.show();		// write output to actual led strip
+	  delay(50);
 }

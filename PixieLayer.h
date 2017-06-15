@@ -30,8 +30,8 @@ class PixieLayer : public PixieLayerBase
 		void splash (p_int center, p_int radius, uint32_t color);
 		void line (p_int start, p_int end, uint32_t color);
 		void gradient (uint32_t color1, uint32_t color2);
-		void gradient (p_int start, p_int end, uint32_t color1, uint32_t color2);
-		void gradient3 (uint32_t color1, uint32_t color2, uint32_t color3);
+		// (deprecated) void gradient (p_int start, p_int end, uint32_t color1, uint32_t color2);
+		void gradient (uint32_t color1, uint32_t color2, uint32_t color3);
 		void copy (p_int start, p_int end, p_int dest);
 		void mirror (p_int start, p_int end); 
 		p_int cycle (p_int p);
